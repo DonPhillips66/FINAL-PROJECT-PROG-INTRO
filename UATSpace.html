@@ -1,0 +1,202 @@
+<!--This tells the browser that we are sending it an HTML document to render-->
+<!DOCTYPE html>
+<!--Starts the HTML Document-->
+<html lang="en">
+
+<head style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <!--This will display the title as the title in tab not on actual page-->
+    <title> UAT SPACE PROGRAM</title>
+    <!--Header 1 (smallest size)-->
+    <h1 style="color: whitesmoke">Ready For Takeoff</h1>
+    <!--Start functions here-->
+    <!--First will be functions to start the countdown-->
+    <script>
+        function myCountdownToLaunch(){
+
+            
+//Countdown timer to countdown from 10 to 1 seconds
+var count = 10;
+var countdown = setInterval(function() {
+    count--;
+    if (count <=0) {
+        clearInterval(countdown);
+        document.getElementById("DisplayCountdown").innerHTML = "";
+        document.getElementById("DisplayMessages").innerHTML = "COUNTDOWN COMPLETE";
+    }
+    //If the count is 5 display the message "5 seconds left"
+    else if (count == 5) {
+        document.getElementById("DisplayCountdown").innerHTML = count + " seconds left";
+       //* document.getElementById("DisplayMessages").innerHTML = "You have reached the halfway point, there is no turning back now";*//
+    }
+    //Otherwise display the count
+    else {
+        document.getElementById("DisplayCountdown").innerHTML = count;
+    }
+    
+}, 1000);
+
+}
+
+       
+     
+    </script>
+
+    <!--Lets make CSS to style the background image for entire page-->
+    <style type="text/css">
+         table,th,td {
+        border: 2px solid whitesmoke;
+        border-collapse: collapse;
+    }
+        th {
+        padding: 8px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+        td {
+        padding: 2px;
+        font-size: large;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-image: url("MarsREVOLVE.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<!---Here we have some in line CSS to change the background color to a body-->
+
+
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+     <!--Make a table here-->
+<!--Table tag used to create table-->
+    <table align="right">
+        <!--Th tr tag is used to make a table row-->
+        <!--Td tag used to make table column-->
+            <!--We put the data in the td tags-->
+        <tr style="color: whitesmoke;">
+            <th style="font-size: larger;">Data Type</th>
+            <th style="font-size: larger;">Reading</th>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td> Time Elapsed:</td>
+            <td>15 Seconds</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Latitude:</td>
+            <td>0</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>Longitude:</td>
+            <td>0</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>GPS Altitude:</td>
+            <td>0</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>BMP Sensor Altitude:</td>
+            <td>30383.04</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>BMP Sensor Pressure:</td>
+            <td>2.34</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>BMP Sensor Temperature:</td>
+            <td>0</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Digital Sensor Temperature:</td>
+            <td>24.12</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>CSS Sensor Temperature:</td>
+            <td>25</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>CSS Sensor eCO2:</td>
+            <td>400</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>CSS Sensor TVOC:</td>
+            <td>0</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>UV:</td>
+            <td>0</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Accel X:</td>
+            <td>-0.87</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Accel Y:</td>
+            <td>-0.02</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>Accel Z:</td>
+            <td>9.61</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Magnetic X:</td>
+            <td>.13</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Magnetic Y:</td>
+            <td>.57</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>Magnetic Z:</td>
+            <td>-0.24</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Gyro X:</td>
+            <td>4.66</td>
+        </tr>
+        <tr style="color: whitesmoke;">
+            <td>Gyro Y:</td>
+            <td>0.01</td>
+            </tr>
+        <tr style="color: whitesmoke;">
+            <td>Gyro Z:</td>
+            <td>-0.4</td>
+        </tr>
+    </table>
+ 
+    <h2 style="color: whitesmoke;"> Welcome to the UAT Space Program</h2>
+    <!--I want to display mission control as the banner image for this website-->
+    <img src="UATINTRO.gif" alt="space1" width="300" height="180">
+    <!--This will describe this web page-->
+    <p style="color: whitesmoke;">Today, we have a spaceship blasting off shortly to Mars</p>
+    <!--Place Buttons here that will start the countdown-->
+
+    
+
+
+    <button onclick="myCountdownToLaunch()">Start Countdown</button>
+    <!--This will display a countdown-->
+    <p id="DisplayCountdown" style="color: whitesmoke;">10</p>
+    <p id="DisplayMessages" style="color: whitesmoke;"> Brace Yourself</p>
+    <!--This will display the countdown-->
+    
+<audio controls autoplay style="align-items: center;">
+        <!--save the mp3 in folder to source from-->
+        <source src="musicback.mp3" type="audio/mpeg">
+    </audio>
+    <!-- place footer here!-->
+    
+   
+
+    <footer style="color: whitesmoke;">
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" font-size: small;>Houston Space Center Imagined</p>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" font-size: smaller;>Author: Don Phillips<br>
+            <a href="mailto:Donmphillips66@gmail.com" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">donmphillips66@gmail.com</a>
+        </p>
+    </footer> <a href="index.html" style="color: whitesmoke;">RETURN TO HOME</a>
+</body>
+
+
+<!--Ends the HTML document-->
+
+</html>
